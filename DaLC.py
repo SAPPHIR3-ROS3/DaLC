@@ -12,6 +12,7 @@ def Main():
     Login = Image.open('Login.png')
     Login = Login.filter(Blur(Percent(3, list(Login.size)))).save('Login.png')
     WDLL.user32.SystemParametersInfoW(0x14, 0, Path('WallPaper.png'), 3)
+    pass
 
 def Percent(Percentage = float(), Dimensions = []):
     print(Dimensions[0])
